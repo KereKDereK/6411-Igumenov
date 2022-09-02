@@ -1,0 +1,60 @@
+.valueInput {
+    margin: 10px 10px 20px 10px;
+}
+
+.back {
+    margin: 20px 20px 20px 20px;
+    border-style: dotted;
+    border-width: 2px 2px 2px 2px;
+    border-color: red;
+    background-color: lightgreen;
+    border-radius: 15px;
+}
+
+.selectInput {
+    margin: 20px 20px 20px 20px;
+    width: 70px;
+    background-color: lightgreen;
+    border-width: 2px 2px 2px 2px;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 15px;
+}
+
+.color {
+    color:red;
+}
+
+.secondInput {
+    color: red;
+    margin: 20px 20px 20px 20px;
+    background-color: lightgreen;
+    border-width: 2px 2px 2px 2px;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 15px;
+}
+
+.resultInput {
+    color: red;
+    background-color: lightgreen;
+    border-width: 2px 2px 2px 2px;
+    margin: 20px auto 20px auto;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.row {
+    display: block;
+}
+
+.button {
+    color: red;
+    margin: 20px auto 20px auto;
+    background-color: lightgreen;
+    border-width: 2px 2px 2px 2px;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 5px;
+}
