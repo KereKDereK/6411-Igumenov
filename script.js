@@ -3,12 +3,12 @@ function buttonClickHandler() {
     document.getElementById("Input2").style.backgroundColor = "lightgreen";
     let value1 = document.getElementById("Input1").value;
     let value2 = document.getElementById("Input2").value;
-    value1 = parseFloat(value1);
-    value2 = parseFloat(value2);
-    let result = 0;
+    let result = 0; 
     let result1 = "OK";
-    if (!isNaN(value1) && isFinite(value1) && !isNaN(value2) && isFinite(value2))
+    if (!isNaN(parseFloat(value1)) && isFinite(value1) && !isNaN(parseFloat(value2)) && isFinite(value2))
     {
+        value1 = parseFloat(value1);
+        value2 = parseFloat(value2);
         switch (document.getElementById("select").value){
             case "1":
                 result = value1 + value2;
@@ -23,7 +23,7 @@ function buttonClickHandler() {
                 break;
         
             case "4":
-                if (value2 !== 0.0)
+                if (Math.abs(value2) >= Number.EPSILON)
                 {
                     result = value1 / value2;
                 }
@@ -41,11 +41,11 @@ function buttonClickHandler() {
 
     else
     {
-        if (isNaN(parseFloat(value1))){
+        if (isNaN(parseFloat(value1)) || !isFinite(value1)){
             document.getElementById("Input1").style.backgroundColor = "yellow";
             result1 = "Error. First value is not a number";
         }
-        else
+        else if (isNaN(parseFloat(value2)) || !isFinite(value2))
         {
             document.getElementById("Input2").style.backgroundColor = "yellow";
             result1 = "Error. Second value is not a number";
